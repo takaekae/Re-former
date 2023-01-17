@@ -1,0 +1,372 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: square;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+$first-color: #82AAE3;
+$background-color: #91D8E4;
+$third-color: #BFEAF5;
+$fourth-color: #EAFDFC;
+$succes-color: #00ff00;
+body{
+    background-color: $fourth-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    h1{
+        font-size: 3rem;
+        color: $first-color;
+        margin-bottom: 1rem;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+    width: 50vw;
+    padding: 1rem;
+
+
+
+    .form{
+        padding: 1rem;
+        background-color: $background-color;
+        border-radius: 1rem;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+
+        .flash{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            color: $succes-color;
+            font-size: 2rem;
+        }
+
+        .new_user{
+            padding: 1rem;
+
+            .error-container{
+                color: red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+            }
+
+
+
+            .form-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+
+
+                .fields{
+                    width: 20rem;
+                    padding: 1rem;
+                    label{
+                        font-size: 1.5rem;
+                        color: $fourth-color;
+                        margin-bottom: 1rem;
+                    }
+                    input[type="text"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                        border: none;
+                        outline: none;
+                        font-size: 1.5rem;
+                        color: $first-color;
+                        &:hover{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                        &:focus{
+                            border-bottom: .2rem solid $first-color;
+                        }
+
+                    }
+
+                    input[type="email"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                        border: none;
+                        outline: none;
+                        font-size: 1.5rem;
+                        color: $first-color;
+                        &:hover{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                        &:focus{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                    }
+
+                    input[type="password"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                        border: none;
+                        outline: none;
+                        font-size: 1.5rem;
+                        color: $first-color;
+                        &:hover{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                        &:focus{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                    }
+
+                    input[type="submit"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                        border: none;
+                        border-bottom: 1px solid $first-color;
+                        outline: none;
+                        font-size: 1.5rem;
+                        background-color: $first-color;
+                        color: $fourth-color;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: $fourth-color;
+                            color: $first-color;
+                            border-bottom: .2rem solid $first-color;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            // hover shadow effect
+
+        }
+
+        .edit_user{
+            padding: 1rem;
+
+            .error-container{
+                color: red;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: justify;
+                align-items: center;
+            }
+
+
+            .form-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+
+
+                .fields{
+                    width: 20rem;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        font-size: 1.5rem;
+                        color: $fourth-color;
+                        margin-bottom: 1rem;
+                    }
+                    input[type="text"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                        border: none;
+                        border-bottom: 1px solid $fourth-color;
+                        outline: none;
+                        font-size: 1.5rem;
+                        color: $first-color;
+
+                        &:hover{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                        &:focus{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                    }
+
+                    input[type="email"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                        border: none;
+                        outline: none;
+                        font-size: 1.5rem;
+                        color: $first-color;
+                        &:hover{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                        &:focus{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                    }
+
+                    input[type="password"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                        border: none;
+                        outline: none;
+                        font-size: 1.5rem;
+                        color: $first-color;
+                        &:hover{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                        &:focus{
+                            border-bottom: .2rem solid $first-color;
+                        }
+                    }
+
+                    input[type="submit"]{
+                        width: 100%;
+                        padding: 1rem;
+                        margin-top: 1.5rem;
+                        border: none;
+                        border-bottom: 1px solid $first-color;
+                        outline: none;
+                        font-size: 1.5rem;
+                        background-color: $first-color;
+                        color: $fourth-color;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: $fourth-color;
+                            color: $first-color;
+                            border-bottom: .2rem solid $first-color;
+
+                        }
+
+                    }
+                    .back-btn{
+                        margin-top: 1rem;
+                        text-align: center;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .list{
+        padding: 1rem;
+        background-color: $background-color;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+
+
+        .user-table{
+            width: 50vw;
+            height: auto;
+
+
+            thead{
+                background-color: $background-color;
+                color: $fourth-color;
+                font-size: 1.5rem;
+                padding: 1rem;
+                text-align: center;
+            }
+            tbody{
+                background-color: $third-color;
+                color: $first-color;
+                font-size: 1.5rem;
+                padding: 1rem;
+                text-align: center;
+                tr{
+                    border-bottom: 1px solid $first-color;
+                }
+                td{
+                    padding: 1rem;
+                    a{
+                        color: $first-color;
+                    }
+
+                    .edit-btn{
+                        color: $first-color;
+                        padding: 1rem;
+                        border: none;
+                        border-radius: 1rem;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        width: 5rem;
+
+                        &:hover{
+                            background-color: $fourth-color;
+                        }
+                    }
+
+
+                    .button_to{
+                       .delete-btn{
+                           background-color: $background-color;
+                           color: $fourth-color;
+                           padding: 1rem;
+                           border: none;
+                           border-radius: 1rem;
+                           cursor: pointer;
+                       }
+
+                    }
+
+
+                    &:hover{
+                        background-color: $fourth-color;
+                    }
+                }
+            }
+        }
+
+        .text-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            span{
+                font-size: 1.5rem;
+                color: $first-color;
+                margin-bottom: 1rem;
+            }
+        }
+
+
+
+    }
+
+}
